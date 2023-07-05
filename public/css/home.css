@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+/*CSS Document*/
+
+/*Home Page*/
+/*Bandeau*/
+.bandeau {
+    background-image: url(../img/SFA-Banniere.webp);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+.bandeau h1 {
+    margin: 0;
+    font-size: 5em;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+/*Services*/
+.service-section {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1450px;
+    margin: 100px auto auto;
+}
+
+.service-block {
+    width: 45%;
+    border: 1px solid lightgray;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-block h2{
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.service-block a {
+    color: black;
+}
+
+@media (max-width: 767px) {
+    .service-section {
+        flex-direction: column;
+    }
+
+    .service-block {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/*Prestations*/
+.prestation-box {
+    width: 90%;
+    max-width: 1450px;
+    margin: 20px auto auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    border: 1px solid lightgrey;
+}
+
+.prestation-box h3 {
+    font-size: 1.7em;
+    text-decoration: underline;
+    padding: 20px;
+    margin: 0;
+}
+
+.prestation-text {
+    margin-bottom: 0.5em;
+}
+
+.prestation-link {
+    font-size: 1.5em;
+    transition: all 0.2s;
+    color: inherit;
+}
+
+.prestation-link:hover {
+    transform: scale(1.2);
+}
+
+/*Map*/
+#map {
+    height: 500px;
+    width: 90%;
+    margin: auto;
+    max-width: 1450px;
+}
+
+/*Social Links*/
+.social-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 300px;
+    margin: auto;
+}
+
+.social-links img{
+    height: 40px;
+    width: auto;
+    padding: 1px;
+}
+
+.social-links img:hover{
+    transform: scale(1.1);
+}

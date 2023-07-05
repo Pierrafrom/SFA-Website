@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <%- include('partials/head'); %>
+        <!--Include the font awesome CSS file-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+            integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+            crossorigin="anonymous" />
+        <!-- Include the Leaflet CSS file -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+            integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+            crossorigin="" />
+        <!-- Include the Leaflet JS file -->
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin=""></script>
+        <!-- Include the Leaflet map settings file -->
+        <script src="/js/map.js" defer></script>
+        <!-- Include the custom CSS file for this page-->
+        <link rel="stylesheet" href="/css/home.css" type="text/css">
+        <title>Accueil</title>
+</head>
+
+<body>
+    <%- include('partials/header'); %>
+
+        <main>
+            <!-- Banner -->
+            <div class="bandeau">
+                <h1>SFA Groupe</h1>
+            </div>
+            <!-- Services -->
+            <div class="service-section">
+                <!-- SFA TP -->
+                <div class="service-block">
+                    <h2>SFA Travaux Publics</h2>
+                    <img src="/img/logos/SFA-TP.png" width="764" height="326" alt="SFA Travaux publics"
+                        style="width: auto; height: 40px;">
+                    <p>
+                        Spécialisée dans les travaux d’aménagement urbain, SFA Travaux Publics est à même de répondre à
+                        toutes vos exigences en matière de travaux publics
+                    </p>
+                    <a href="/about-SFA-TP">A propos de SFA travaux Publics</a>
+                </div>
+                <!-- SFA EV -->
+                <div class="service-block">
+                    <h2>SFA Espaces Verts</h2>
+                    <img src="/img/logos/SFA-Espaces-Verts.png" width="715" height="349" alt="SFA Travaux publics"
+                        style="width: auto; height: 43px;">
+                    <p>
+                        Spécialiste dans la création et l'entretien d’espaces verts, la pose
+                        de portail, portillon, grillage (rigide ou souple), SFA Espaces Verts
+                        vous propose d’intervenir sur tous vos projets en île-de-France.
+                    </p>
+                    <a href="#">A propos de SFA travaux Publics</a>
+                </div>
+            </div>
+            <!-- Prestations -->
+            <h2>Nos Prestations</h2>
+            <div class="prestation-box">
+                <div>
+                    <h3>Découvrez nos prestations</h3>
+                    <p class="prestation-text">
+                        Découvrir nos prestations de travaux publics et d'espaces verts
+                    </p>
+                </div>
+                <a href="#" class="prestation-link">
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <!-- Recrutement -->
+            <h2>Recrutement</h2>
+            <p style="text-align: center">
+                Si vous souhaitez postuler pour un poste, contactez- nous à l'adresse
+                suivante : <br />
+                <span><a href="mailto:contact@sfa-ev.com" style="color: black;">contact@sfa-ev.com</a></span>
+            </p>
+            <!-- Chantiers -->
+            <h2>Nos Chantiers</h2>
+            <div id="map"></div>
+            <!-- Qui sommes-nous ? -->
+            <h2>Qui sommes-nous ?</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum
+                iure nisi dolor esse cumque adipisci tempore ipsum reiciendis a. Culpa
+                blanditiis ut totam. Nostrum ducimus rem repellat non possimus
+                provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                tempore voluptate modi molestiae ad amet illum aperiam nulla debitis
+                aspernatur, eos laboriosam, sed nam fugiat fuga architecto, molestias
+                maxime minima!
+            </p>
+            <!-- Contact -->
+            <div class="social-links">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="/img/icones/facebook.png" alt="facebook" />
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <img src="/img/icones/linkedin.png" alt="linkedin" />
+                </a>
+                <a href="tel:+33237510510">
+                    <img src="/img/icones/appel-telephonique.png" alt="phone" />
+                </a>
+                <a href="mailto:contact@sfa-ev.com">
+                    <img src="/img/icones/email.png" alt="mail" />
+                </a>
+            </div>
+        </main>
+
+        <%- include('partials/footer'); %>
+            <%- include('partials/script');%>
+</body>
+
+</html>
