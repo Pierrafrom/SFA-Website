@@ -39,17 +39,21 @@ app.use('/amenagementUrbain', require('./routes/amenagementUrbain'));
 app.use('/grosAmenagement', require('./routes/grosAmenagement'));
 app.use('/maconnerie', require('./routes/maconnerie'));
 app.use('/reseaux', require('./routes/reseaux'));
+app.use('/prestation', require('./routes/prestation'));
+app.use('/voirie', require('./routes/voirie'));
+app.use('/creationPaysageExt', require('./routes/creationPaysageExt'));
+app.use('/entretienAmenagementPaysage', require('./routes/entretienAmenagementPaysage'));
 
 // routes utilisant la méthode POST
 app.post('/envoyer', (req, res) => {
   const data = req.body;
   mailController.envoyerMail(data, (error, info) => {
     if (error) {
-      console.log(error);
-      res.status(500).send('Erreur lors de l\'envoi de l\'e-mail');
+      console.error('Erreur:', error);
+      res.status(500).json({ error: 'Erreur lors de l\'envoi de l\'e-mail' });
     } else {
-      console.log('E-mail envoyé: ' + info.response);
-      res.send('E-mail envoyé avec succès');
+      console.log('E-mail envoyé:', info);
+      res.json({ success: 'E-mail envoyé avec succès' });
     }
   });
 });

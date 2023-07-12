@@ -16,18 +16,29 @@ function envoyerMail(data, callback) {
     // Définir les options de l'e-mail
     const mailOptions = {
         from: data.email,
-        to: 'pierrefromont@outlook.fr',
+        to: data.destinataire,
         subject: data.sujet,
-        text: '\n---------------------------------------------------------------------------------------------\n' + 
-        'Ce message a été envoyé depuis le site web de l\'entreprise' + 
-        '\n---------------------------------------------------------------------------------------------\n\n' +
-        data.message +
-        '\n\n' + data.nom + ' ' + data.prenom + '\n' + data.email,
+        text: '\n---------------------------------------------------------------------------------------------\n' +
+            'Ce message a été envoyé depuis le site web de l\'entreprise' +
+            '\n---------------------------------------------------------------------------------------------\n\n' +
+            data.message +
+            '\n\n' + data.nom + ' ' + data.prenom + '\n' + data.email,
         replyTo: data.email // Permettre à l'utilisateur de répondre directement à l'e-mail
     };
 
-    /*
+    // exception
+    if (data.destinataire === '' || data.sujet === '' || data.message === '' || data.nom === ''
+        || data.prenom === '' || data.email === '') {
+        throw new Error('Remplir tous les champs');
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(data.email) || !emailRegex.test(data.destinataire)) {
+        throw new Error('Mail non valide');
+    }
+
     // Ajouter une pièce jointe si le champ fichier n'est pas vide
+    /*
     if (data.fichier && data.fichier.path) {
         const fichier = {
             filename: data.fichier.name,
@@ -40,7 +51,13 @@ function envoyerMail(data, callback) {
     */
 
     // Envoyer l'e-mail
-    transporter.sendMail(mailOptions, callback);
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            callback(error);
+        } else {
+            callback(null, info);
+        }
+    });
 }
 
 module.exports = {

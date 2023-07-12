@@ -2,16 +2,39 @@
 
 /* CSS Document */
 
+/*Font*/
+@import url('./font.css');
 
 /*General*/
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
 }
 
 body {
-    background-color: rgb(240, 240, 240);
+    background-color: white;
+    /*background-color: rgb(240, 240, 240);*/
+}
+
+.navbar {
+    background-color: #c3ced6;
+}
+
+.nav-link {
+    font-weight: 500;
+}
+
+.dropdown-menu {
+    background-color: #c3ced6;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    color: #4b4b4b;
+    background-color: #c3ced6;
 }
 
 img {
@@ -20,36 +43,68 @@ img {
 }
 
 h1 {
-    margin-top: 100px;
-    margin-bottom: 100px;
     text-align: center;
     text-decoration: underline;
+    font-weight: 600;
 }
 
 h2 {
-    margin: 100px 20px;
     text-align: center;
     text-decoration: underline;
+    padding-bottom: 20px;
+    font-weight: 600;
 }
 
 h4 {
     width: 90%;
-    margin: 20px auto;
     max-width: 1450px;
 }
 
 p {
     width: 90%;
-    margin: 20px auto;
     max-width: 1450px;
+    margin: auto;
+    font-weight: 400;
+    font-size: .9375rem;
 }
 
-.text{
+a {
+    color: #191919;
+}
+
+section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.text {
     display: block;
     margin: auto;
     width: 90%;
     max-width: 1450px;
 }
+
+/*Bandeau*/
+.bandeau {
+    background-image: url(../img/SFA-Banniere.webp);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+.bandeau h1 {
+    margin: 0;
+    font-size: 5em;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
 
 /* Navigation Bar */
 .hide {
@@ -57,8 +112,45 @@ p {
 }
 
 /* footer */
-footer iframe{
+footer iframe {
     width: 100%;
     height: 90%;
     border: none;
+}
+
+/*Color section*/
+.skyBlue {
+    background-color: rgb(222, 240, 248);
+    color: #191919;
+    border-color: #191919;
+}
+
+.lightGrey {
+    background-color: rgb(184, 187, 191);
+    color: #191919;
+    border-color: #191919;
+}
+
+.blueGrey {
+    background-color: #c3ced6;
+    color: #191919;
+    border-color: #191919;
+}
+
+.darkBlue {
+    background-color: #0e1e3d;
+    color: white;
+    border-color: white;
+}
+
+.darkGrey {
+    background-color: rgb(105, 106, 108);
+    color: white;
+    border-color: white;
+}
+
+.white {
+    background-color: white;
+    color: #191919;
+    border-color: rgb(184, 187, 191);
 }
