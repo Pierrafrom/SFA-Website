@@ -78,6 +78,7 @@ function runSuccessAlert() {
     setTimeout(() => {
         alertElement.classList.remove('success');
         alertElement.classList.add('hide');
+        txt.innerHTML = '';
     }, 5000);
 }
 
@@ -88,5 +89,6 @@ function runErrorAlert() {
     setTimeout(() => {
         alertElement.classList.remove('error');
         alertElement.classList.add('hide');
+        txt.innerHTML = '';
     }, 5000);
 }

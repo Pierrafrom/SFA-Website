@@ -12,154 +12,88 @@
     <%- include('partials/header'); %>
 
         <main>
-            <h1>Maçonnerie</h1>
-            <div class="block-center">
-                <h4 class="text" style="margin-bottom: 20px;">La création d’allées, la pose de dallage ou encore la
-                    réalisation d'une cour pour embellir votre quotidien.<br> La confection de murs selon vos envies
-                    pour un paysage apaisant :</h4>
-                <ul class="text">
-                    <li>Gabion</li>
-                    <li>Mur de soutènement</li>
-                    <li>Mur en rondin de bois</li>
-                    <li>Mur en pierres de meulière</li>
-                    <li>Pose de pavés</li>
-                    <li>Terrasse</li>
-                </ul>
+            <!-- Banner -->
+            <div class="bandeau" style="background-image: url(/img/SFA-Banniere.webp);">
+                <h1>Maçonnerie</h1>
             </div>
 
-            <h2>Images</h2>
-            <div class="grid text-center">
-                <div class="g-col-6 g-col-md-4">
-                    <h4>Gabion :</h4>
-                    <div id="carouselFade" class="carousel slide carousel-fade">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="/img/maconnerie/gabion.webp" width="1024" height="768" alt="gabion">
+            <section>
+                <h2>Services</h2>
+                <div class="block-center">
+                    <p>La création d’allées, la pose de dallage ou encore la
+                        réalisation d'une cour pour embellir votre quotidien.<br> La confection de murs selon vos envies
+                        pour un paysage apaisant :</p>
+                    <ul class="text">
+                        <li>Gabion</li>
+                        <li>Mur de soutènement</li>
+                        <li>Mur en rondin de bois</li>
+                        <li>Mur en pierres de meulière</li>
+                        <li>Pose de pavés</li>
+                        <li>Terrasse</li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <h2>Images</h2>
+                <div class="grid text-center">
+                    <div class="g-col-6 g-col-md-4">
+                        <h4>Exemples de réalisations:</h4>
+                        <div id="carouselFade" class="carousel slide carousel-fade">
+                            <div class="carousel-inner">
+
+                                <div class="carousel-item active">
+                                    <img src="/img/maconnerie/gabion.webp" width="1024" height="768" alt="gabion">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/img/maconnerie/pave_2.webp" width="1024" height="768" alt="pave 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/img/maconnerie/mur_soutenement_1.webp" width="640" height="480"
+                                        alt="mur de soutènement 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/img/maconnerie/pave_5.webp" width="700" height="525" alt="pave 5">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/img/maconnerie/mur_rondin_1.webp" width="640" height="480"
+                                        alt="mur en rondin de bois 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/img/maconnerie/mur_soutenement_2.webp" width="640" height="480"
+                                        alt="mur de soutènement 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/img/maconnerie/mur_pierre_meuliere.webp" width="1024" height="768"
+                                        alt="mur en pierre meulière">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/img/maconnerie/pave_3.webp" width="565" height="424" alt="pave 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/img/maconnerie/pave_4.webp" width="640" height="480" alt="pave 4">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/img/maconnerie/mur_rondin_2.webp" width="640" height="480"
+                                        alt="mur en rondin de bois 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/img/maconnerie/pave_1.webp" width="1024" height="768" alt="pave 1">
+                                </div>
                             </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselFade"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselFade"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-                        <!--
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselFade"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselFade"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button> -->
                     </div>
                 </div>
-                <div class="g-col-6 g-col-md-4">
-                    <h4>Murs de soutènement :</h4>
-                    <div id="carouselFade_2" class="carousel slide carousel-fade">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="/img/maconnerie/mur_soutenement_1.webp" width="640" height="480"
-                                    alt="mur de soutènement 1">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="/img/maconnerie/mur_soutenement_2.webp" width="640" height="480"
-                                    alt="mur de soutènement 2">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselFade_2"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselFade_2"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="g-col-6 g-col-md-4">
-                    <h4>Murs en rondin de bois :</h4>
-                    <div id="carouselFade_3" class="carousel slide carousel-fade">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="/img/maconnerie/mur_rondin_1.webp" width="640" height="480"
-                                    alt="mur en rondin de bois 1">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="/img/maconnerie/mur_rondin_2.webp" width="640" height="480"
-                                    alt="mur en rondin de bois 2">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselFade_3"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselFade_3"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="g-col-6 g-col-md-4">
-                    <h4>Mur en pierres meulière :</h4>
-                    <div id="carouselFade4" class="carousel slide carousel-fade">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="/img/maconnerie/mur_pierre_meuliere.webp" width="1024" height="768"
-                                    alt="mur en pierre meulière">
-                            </div>
-                        </div>
-                        <!--
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselFade4"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselFade4"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button> -->
-                    </div>
-                </div>
-                <div class="g-col-6 g-col-md-4">
-                    <h4>Pavés:</h4>
-                    <div id="carouselFade_5" class="carousel slide carousel-fade">
-                        <div class="carousel-inner">
-                            <div class="carousel-item">
-                                <img src="/img/maconnerie/pave_1.webp" width="1024" height="768"
-                                    alt="pave 1">
-                            </div>
-                            <div class="carousel-item active">
-                                <img src="/img/maconnerie/pave_2.webp" width="1024" height="768"
-                                    alt="pave 2">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="/img/maconnerie/pave_3.webp" width="565" height="424"
-                                    alt="pave 3">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="/img/maconnerie/pave_4.webp" width="640" height="480"
-                                    alt="pave 4">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="/img/maconnerie/pave_5.webp" width="700" height="525"
-                                    alt="pave 5">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselFade_5"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselFade_5"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
+            </section>
         </main>
 
         <%- include('partials/footer'); %>

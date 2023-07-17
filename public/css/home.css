@@ -23,10 +23,10 @@
     align-items: center;
 }
 
-.service-block h2{
-    margin-top: 0;
-    margin-bottom: 40px;
+.service-block a {
+    padding: 5px;
 }
+
 
 @media (max-width: 767px) {
     .service-section {

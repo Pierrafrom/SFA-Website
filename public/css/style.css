@@ -15,26 +15,26 @@
 }
 
 body {
-    background-color: white;
+    background-color: #f0f0f0;
     /*background-color: rgb(240, 240, 240);*/
-}
-
-.navbar {
-    background-color: #c3ced6;
 }
 
 .nav-link {
     font-weight: 500;
 }
 
+.navbar {
+    background-color: white;
+}
+
 .dropdown-menu {
-    background-color: #c3ced6;
+    background-color: white;
 }
 
 .dropdown-item:hover,
 .dropdown-item:focus {
     color: #4b4b4b;
-    background-color: #c3ced6;
+    background-color: white;
 }
 
 img {
@@ -46,6 +46,7 @@ h1 {
     text-align: center;
     text-decoration: underline;
     font-weight: 600;
+    padding: 10px;
 }
 
 h2 {
@@ -53,11 +54,6 @@ h2 {
     text-decoration: underline;
     padding-bottom: 20px;
     font-weight: 600;
-}
-
-h4 {
-    width: 90%;
-    max-width: 1450px;
 }
 
 p {
@@ -86,7 +82,6 @@ section {
 
 /*Bandeau*/
 .bandeau {
-    background-image: url(../img/SFA-Banniere.webp);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
@@ -119,38 +114,44 @@ footer iframe {
 }
 
 /*Color section*/
-.skyBlue {
+.color1 {
     background-color: rgb(222, 240, 248);
     color: #191919;
     border-color: #191919;
 }
 
-.lightGrey {
+.color2 {
     background-color: rgb(184, 187, 191);
     color: #191919;
     border-color: #191919;
 }
 
-.blueGrey {
+.color3 {
     background-color: #c3ced6;
     color: #191919;
     border-color: #191919;
 }
 
-.darkBlue {
+.color4 {
     background-color: #0e1e3d;
     color: white;
     border-color: white;
 }
 
-.darkGrey {
+.color5 {
     background-color: rgb(105, 106, 108);
     color: white;
     border-color: white;
 }
 
-.white {
+.color6 {
     background-color: white;
     color: #191919;
     border-color: rgb(184, 187, 191);
+}
+
+@media screen and (max-width: 768px) {
+    .bandeau h1 {
+        font-size: 2.5em;
+    }
 }

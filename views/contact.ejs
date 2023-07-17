@@ -18,59 +18,69 @@
     <%- include('partials/header'); %>
 
         <main>
-            <h1>Contact</h1>
-            <!-- Contact Section-->
-            <div class="contact-section">
-                <div class="contact-block">
-                    <img src="../img/logos/SFA-TP.png" width="764" height="326" alt="SFA Travaux publics"
-                        style="width: auto; height: 40px;">
-                    <p>Pour toute demande concernant SFA Travaux Publics :</p>
-                    <a href="tel:+33649428058"> Téléphone: +33 6 49 42 80 58</a>
-                    <a href="mailto:contact@sfa-tp.com">Mail: contact@sfa-tp.com</a>
-                </div>
-                <div class="contact-block">
-                    <img src="../img/logos/SFA-Groupe.png" width="638" height="391" alt="SFA Travaux publics"
-                        style="width: auto; height: 43px;">
-                    <p>Pour toute demande appelez ce numéro:</p>
-                    <a href="tel:+33237510510"> Téléphone: +33 2 37 51 05 10</a>
-                </div>
-                <div class="contact-block">
-                    <img src="../img/logos/SFA-Espaces-Verts.png" width="715" height="349" alt="SFA Travaux publics"
-                        style="width: auto; height: 43px;">
-                    <p>Pour toute demande concernant SFA Espaces Verts :</p>
-                    <a href="tel:+33685145221"> Téléphone: +33 6 85 14 52 21</a>
-                    <a href="mailto:contact@sfa-ev.com">Mail: contact@sfa-ev.com</a>
-                </div>
+            <!-- Banner -->
+            <div class="bandeau" style="background-image: url(/img/SFA-Banniere.webp);">
+                <h1>Contact</h1>
             </div>
 
-            <h2>Formulaire de contact</h2>
-            <div id="alert" class="hide alert">
-                <p id="txt-alert"></p>
-            </div>
-            <form action="/envoyer" method="POST" enctype="multipart/form-data" id="contact-form">
-                <div class="nom-prenom">
-                    <div>
-                        <label for="nom">Nom <span>*</span></label>
-                        <input type="text" id="nom" name="nom" required placeholder="Entrez votre nom ici">
+            <!-- Contact Section-->
+            <section>
+                <h2>Coordonnées</h2>
+                <div class="contact-section">
+                    <div class="contact-block">
+                        <img src="../img/logos/SFA-TP.png" width="764" height="326" alt="SFA Travaux publics"
+                            style="width: auto; height: 40px;">
+                        <p>Pour toute demande concernant SFA Travaux Publics :</p>
+                        <a href="tel:+33649428058"> Téléphone: +33 6 49 42 80 58</a>
+                        <a href="mailto:contact@sfa-tp.com">Mail: contact@sfa-tp.com</a>
+                    </div>
+                    <div class="contact-block">
+                        <img src="../img/logos/SFA-Groupe.png" width="638" height="391" alt="SFA Travaux publics"
+                            style="width: auto; height: 43px;">
+                        <p>Pour toute demande appelez ce numéro:</p>
+                        <a href="tel:+33237510510"> Téléphone: +33 2 37 51 05 10</a>
+                    </div>
+                    <div class="contact-block">
+                        <img src="../img/logos/SFA-Espaces-Verts.png" width="715" height="349" alt="SFA Travaux publics"
+                            style="width: auto; height: 43px;">
+                        <p>Pour toute demande concernant SFA Espaces Verts :</p>
+                        <a href="tel:+33685145221"> Téléphone: +33 6 85 14 52 21</a>
+                        <a href="mailto:contact@sfa-ev.com">Mail: contact@sfa-ev.com</a>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Formulaire de contact</h2>
+                <div id="alert" class="hide alert">
+                    <p id="txt-alert"></p>
+                </div>
+                <form action="/envoyer" method="POST" enctype="multipart/form-data" id="contact-form">
+                    <div class="nom-prenom">
+                        <div>
+                            <label for="nom">Nom <span>*</span></label>
+                            <input type="text" id="nom" name="nom" required placeholder="Entrez votre nom ici">
+                        </div>
+                        <div>
+                            <label for="prenom">Prénom <span>*</span></label>
+                            <input type="text" id="prenom" name="prenom" required placeholder="Entrez votre prénom ici">
+                        </div>
                     </div>
                     <div>
-                        <label for="prenom">Prénom <span>*</span></label>
-                        <input type="text" id="prenom" name="prenom" required placeholder="Entrez votre prénom ici">
+                        <label for="email">Email <span>*</span></label>
+                        <input type="email" id="email" name="email" required
+                            placeholder="Entrez votre adresse mail ici">
                     </div>
-                </div>
-                <div>
-                    <label for="email">Email <span>*</span></label>
-                    <input type="email" id="email" name="email" required placeholder="Entrez votre adresse mail ici">
-                </div>
-                <div>
-                    <label for="sujet">Sujet <span>*</span></label>
-                    <input type="text" id="sujet" name="sujet" required placeholder="Entrez le sujet du message ici">
-                </div>
-                <div>
-                    <label for="message">Message <span>*</span></label>
-                    <textarea id="message" name="message" required placeholder="Entrez votre message ici"></textarea>
-                </div>
-                <!--
+                    <div>
+                        <label for="sujet">Sujet <span>*</span></label>
+                        <input type="text" id="sujet" name="sujet" required
+                            placeholder="Entrez le sujet du message ici">
+                    </div>
+                    <div>
+                        <label for="message">Message <span>*</span></label>
+                        <textarea id="message" name="message" required
+                            placeholder="Entrez votre message ici"></textarea>
+                    </div>
+                    <!--
                 <p>Ajouter un fichier</p>
                 <div class="file-section">
                     <div class="" id="upload">
@@ -89,24 +99,25 @@
                     </div>
                 </div>
                 -->
-                <div class="selection">
-                    <p>Veuillez sélectionner un destinataire <span>*</span></p>
-                    <div class="choix">
-                        <div>
-                            <label for="destinataire1">SFA travaux publics</label>
-                            <input type="checkbox" id="destinataire1" name="destinataire1">
-                        </div>
-                        <div>
-                            <label for="destinataire2">SFA espaces verts</label>
-                            <input type="checkbox" id="destinataire2" name="destinataire2">
+                    <div class="selection">
+                        <p>Veuillez sélectionner un destinataire <span>*</span></p>
+                        <div class="choix">
+                            <div>
+                                <label for="destinataire1">SFA travaux publics</label>
+                                <input type="checkbox" id="destinataire1" name="destinataire1">
+                            </div>
+                            <div>
+                                <label for="destinataire2">SFA espaces verts</label>
+                                <input type="checkbox" id="destinataire2" name="destinataire2">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div>
-                    <button type="submit">Envoyer</button>
-                </div>
-                <p>Les éléments marqués d'une <span>*</span> sont obligatoires</p>
-            </form>
+                    <div>
+                        <button type="submit">Envoyer</button>
+                    </div>
+                    <p>Les éléments marqués d'une <span>*</span> sont obligatoires</p>
+                </form>
+            </section>
         </main>
 
         <%- include('partials/footer'); %>

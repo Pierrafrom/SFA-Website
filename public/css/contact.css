@@ -8,7 +8,7 @@
     justify-content: space-between;
     width: 90%;
     max-width: 1450px;
-    margin: 100px auto auto;
+    margin: 10px auto auto;
 }
 
 .contact-block {
@@ -88,6 +88,7 @@
 #contact-form p {
     width: 100%;
     text-align: center;
+    padding: 5px;
 }
 
 #contact-form .nom-prenom {
@@ -178,7 +179,7 @@
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 50px;
+    height: 75px;
     /*background-color: #ffb83d;*/
     color: whitesmoke;
     border-radius: 25px;

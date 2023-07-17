@@ -43,6 +43,12 @@ app.use('/prestation', require('./routes/prestation'));
 app.use('/voirie', require('./routes/voirie'));
 app.use('/creationPaysageExt', require('./routes/creationPaysageExt'));
 app.use('/entretienAmenagementPaysage', require('./routes/entretienAmenagementPaysage'));
+app.use('/vegetalisation', require('./routes/vegetalisation'));
+app.use('/realisation', require('./routes/arrosage'));
+app.use('/elagage', require('./routes/elagage'));
+app.use('/cloturePortail', require('./routes/cloturePortail'));
+app.use('/genieVegetalEcologique', require('./routes/genieVegetalEcologique'));
+app.use('/arrosage', require('./routes/arrosage'));
 
 // routes utilisant la méthode POST
 app.post('/envoyer', (req, res) => {
