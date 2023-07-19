@@ -18,3 +18,62 @@
     flex-direction: column;
     justify-content: center;
 }
+
+/* Style pour le rond blanc derrière les flèches */
+.carousel-control-prev::before,
+.carousel-control-next::before {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background-color: white;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+/* Style pour ajouter une flèche à l'intérieur du rond */
+.carousel-control-prev::after,
+.carousel-control-next::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  z-index: 2;
+}
+
+/* Style pour la flèche précédente */
+.carousel-control-prev::after {
+  border-width: 6px 6px 6px 0;
+  border-color: transparent black transparent transparent;
+  transform: translate(-50%, -50%);
+}
+
+/* Style pour la flèche suivante */
+.carousel-control-next::after {
+  border-width: 6px 0 6px 6px;
+  border-color: transparent transparent transparent black;
+  transform: translate(-50%, -50%);
+}
+
+/* Style pour changer la couleur des flèches en blanc */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  fill: white;
+}
+
+/* Style pour changer la taille des flèches (optionnel) */
+.carousel-control-prev-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.carousel-control-next-icon {
+  width: 30px;
+  height: 30px;
+}
