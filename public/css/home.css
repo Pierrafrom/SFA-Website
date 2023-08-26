@@ -104,7 +104,7 @@
 .carousel {
     width: 90%;
     max-width: 1450px;
-    height: 400px;
+    height: auto;
     margin: auto;
 }
 
@@ -214,6 +214,28 @@
   height: 30px;
 }
 
+.carousel-indicators {
+    position: relative; /* Change la position en relative */
+    top: auto; /* Supprime la propriété top pour éviter un décalage vers le haut */
+    bottom: auto; /* Supprime la propriété bottom pour éviter un décalage vers le bas */
+}
+
+@media screen and (max-width: 767px) {
+    .emploi-box{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .emploi-img{
+        width: auto;
+        height: 100px;
+    }
+
+    .emploi-content{
+        width: 100%;
+        height: auto;
+    }
+}
 
 
 

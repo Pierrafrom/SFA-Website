@@ -69,8 +69,12 @@ a {
 }
 
 section {
+    display: inline-block;
+    width: 100%; /* Assurez-vous que la section occupe toute la largeur disponible */
+    height: auto; /* La hauteur s'ajustera en fonction du contenu */
     padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 5rem; /* Ajoutez un espace autour du contenu si nécessaire */
+    box-sizing: border-box; /* Inclut les paddings dans la largeur et la hauteur totales */
 }
 
 .text {
@@ -115,40 +119,43 @@ footer iframe {
 
 /*Color section*/
 .color1 {
-    background-color: rgb(222, 240, 248);
-    color: #191919;
-    border-color: #191919;
+    background-color: #34495e; /* Gris bleuté pour représenter le béton */
+    color: #ffffff; /* Texte en blanc pour contraste */
+    border-color: #2c3e50; /* Nuance plus sombre pour les bordures */
 }
 
 .color2 {
-    background-color: rgb(184, 187, 191);
-    color: #191919;
-    border-color: #191919;
+    background-color: #f39c12; /* Orange vif évoquant la sécurité */
+    color: #ffffff;
+    border-color: #d68910;
 }
 
 .color3 {
-    background-color: #c3ced6;
-    color: #191919;
-    border-color: #191919;
+    background-color: #27ae60; /* Vert représentant la croissance et le développement */
+    color: #ffffff;
+    border-color: #219653;
 }
 
 .color4 {
-    background-color: #0e1e3d;
-    color: white;
-    border-color: white;
+    background-color: #e74c3c; /* Rouge pour l'urgence et l'attention */
+    color: #ffffff;
+    border-color: #c0392b;
 }
 
 .color5 {
-    background-color: rgb(105, 106, 108);
-    color: white;
-    border-color: white;
+    background-color: #3498db; /* Bleu associé à la confiance et à la fiabilité */
+    color: #ffffff;
+    border-color: #2980b9;
 }
 
 .color6 {
-    background-color: white;
-    color: #191919;
-    border-color: rgb(184, 187, 191);
+    background-color: #8e44ad; /* Violet profond pour la créativité et la modernité */
+    color: #ffffff;
+    border-color: #7d3c98;
 }
+
+
+
 
 @media screen and (max-width: 768px) {
     .bandeau h1 {
