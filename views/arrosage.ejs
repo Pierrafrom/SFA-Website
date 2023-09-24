@@ -3,6 +3,9 @@
 
 <head>
     <%- include('partials/head'); %>
+        <!-- Fichier CSS pour les carousel et les sections de couleurs -->
+        <link rel="stylesheet" href="/css/carousel.css" type="text/css">
+        <link rel="stylesheet" href="/css/prestation.css" type="text/css">
         <title>Arrosage</title>
 </head>
 
@@ -11,12 +14,55 @@
 
         <main>
             <!-- Banner -->
-            <div class="bandeau" style="background-image: url(/img/SFA-Banniere.webp);">
+            <div class="bandeau" style="background-image: url(/img/ev-banniere.webp);">
                 <h1>Arrosage</h1>
             </div>
 
-            <section>
-                <h2>Images</h2>
+            <section class="prestation-container">
+                <section class="prestation-left color3">
+                    <div class="prestation">
+                        <h2>Un savoir-faire essentiel</h2>
+                        <p>Un bon arrosage garantit la survie des plantes, économise les ressources en eau et participe
+                            à la lutte contre le réchauffement climatique en ville. <br>
+                            Arroser c’est pérenniser un espace vert, diminuer le besoin en traitements phytosanitaires
+                            et rentabiliser l’investissement fait lors de sa création. <br>
+                            Autant de questions auxquelles il faut répondre avant de se lancer dans l’installation qui
+                            soit la plus adaptée à ses besoins.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="prestation-right">
+                    <div class="prestation">
+                        <div>
+                            <h2>Exemples de réalisations</h2>
+                            <div class="grid text-center">
+                                <div class="g-col-6 g-col-md-4">
+                                    <div id="carouselFade" class="carousel slide carousel-fade">
+                                        <!--
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="/img/elagage/elagage.webp" width="1024" height="768" alt="gabion">
+                                            </div>
+                                        -->
+                                    </div>
+                                    <!--
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselFade"
+                                            data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselFade"
+                                            data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </section>
         </main>
 

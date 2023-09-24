@@ -3,6 +3,8 @@
 
 <head>
     <%- include('partials/head'); %>
+        <link rel="stylesheet" href="/css/carousel.css" type="text/css">
+        <link rel="stylesheet" href="/css/prestation.css" type="text/css">
         <title>Végétalisation des terrasses et des toitures</title>
 </head>
 
@@ -11,12 +13,70 @@
 
         <main>
             <!-- Banner -->
-            <div class="bandeau" style="background-image: url(/img/SFA-Banniere.webp);">
+            <div class="bandeau" style="background-image: url(/img/ev-banniere.webp);">
                 <h1>Végétalisation des terrasses et des toitures</h1>
             </div>
 
-            <section>
-                <h2>Images</h2>
+            <section class="prestation-container">
+                <section class="prestation-left color3">
+                    <div class="prestation">
+                        <div>
+                            <h2>SFA agrémente les toitures végétalisées de systèmes d’arrosages innovants.</h2>
+                            <p>Les systèmes de végétalisation légère des terrasses et toitures permettent la mise en
+                                place
+                                d’une
+                                végétation permanente sur les ouvrages revêtus d’un complexe d’étanchéité résistant à la
+                                pénétration
+                                des racines.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="prestation-right">
+                    <div class="prestation">
+                        <div>
+                            <h2>Exemples de réalisation:</h2>
+                            <div class="grid text-center">
+                                <div class="g-col-6 g-col-md-4">
+                                    <div id="carouselFade" class="carousel slide carousel-fade">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="/img/vegetalisation/plantation_arbre.webp" width="1024"
+                                                    height="768" alt="plantation arbre">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="/img/vegetalisation/engazonnement.webp" width="1024"
+                                                    height="768" alt="engazonnement">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="/img/vegetalisation/engazonnement_raisonne.webp" width="1024"
+                                                    height="768" alt="engazonnement raisonne">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="/img/vegetalisation/toitures_vegetalisees.webp" width="1024"
+                                                    height="768" alt="toitures vegetalisees">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="/img/vegetalisation/plantation_d_arbre.webp" width="1024"
+                                                    height="768" alt="plantation arbre 2">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselFade" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselFade" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </section>
             </section>
         </main>
 

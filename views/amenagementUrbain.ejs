@@ -3,8 +3,9 @@
 
 <head>
     <%- include('partials/head'); %>
-        <!-- Fichier CSS pour les carousel -->
+        <!-- Fichier CSS pour les carousel et les sections de couleurs -->
         <link rel="stylesheet" href="/css/carousel.css" type="text/css">
+        <link rel="stylesheet" href="/css/prestation.css" type="text/css">
         <title>Aménagements Urbains</title>
 </head>
 
@@ -17,88 +18,92 @@
                 <h1>Aménagements Urbains</h1>
             </div>
 
-            <section>
-                <div class="block-center">
-                    <h2 class="text" style="margin-bottom: 20px;">Le savoir-faire au service d’un urbanisme durable :
-                    </h2>
-                    <ul class="text">
-                        <li>Aménagement urbain (rond-point, dos d’âne, centre-ville, place)</li>
-                        <li>Entretien Réfection sur voirie communales et trottoirs</li>
-                        <li>Aménagement et entretien de parking</li>
-                        <li>Aménagement de zones perméables (voirie-parking)</li>
-                        <li>Aménagement de pistes cyclables (retrouver photo)</li>
-                        <li>Entretien de cimetières, (retrouver photo)</li>
-                        <li>Démolition</li>
-                        <li>Création et mise en place de mobilier urbain (retrouver photo)</li>
-                        <li>Bassin EP</li>
-                    </ul>
-                </div>
-            </section>
+            <section class="prestation-container">
+                <section class="prestation-left color1">
+                    <div class="prestation">
+                        <h2>Le savoir-faire au service d’un urbanisme durable</h2>
+                        <ul class="text">
+                            <li>Aménagement urbain (rond-point, dos d’âne, centre-ville, place)</li>
+                            <li>Entretien Réfection sur voirie communales et trottoirs</li>
+                            <li>Aménagement et entretien de parking</li>
+                            <li>Aménagement de zones perméables (voirie-parking)</li>
+                            <li>Aménagement de pistes cyclables (retrouver photo)</li>
+                            <li>Entretien de cimetières, (retrouver photo)</li>
+                            <li>Démolition</li>
+                            <li>Création et mise en place de mobilier urbain (retrouver photo)</li>
+                            <li>Bassin EP</li>
+                        </ul>
+                    </div>
+                </section>
 
-            <section>
-                <h2>Images</h2>
-                <div class="grid text-center">
-                    <div class="g-col-6 g-col-md-4">
-                        <h4>Exemples de réalisation:</h4>
-                        <div id="carouselFade" class="carousel slide carousel-fade">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="/img/Amenagements_Urbain/amenagement_urbain_1.webp" width="1024"
-                                        height="768" alt="amenagement urbain 1">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="/img/Amenagements_Urbain/amenagement_parking_4.webp" width="1024"
-                                        height="768" alt="amenagement parking 4">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="/img/Amenagements_Urbain/amenagement_zone_permeable_2.webp" width="1024"
-                                        height="768" alt="amenagement zone permeable 2">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="/img/Amenagements_Urbain/amenagement_urbain_2.webp" width="1024"
-                                        height="768" alt="amenagement urbain 2">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="/img/Amenagements_Urbain/amenagement_urbain_3.webp" width="1024"
-                                        height="768" alt="amenagement urbain 3">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="/img/Amenagements_Urbain/amenagement_parking_2.webp" width="1024"
-                                        height="768" alt="amenagement parking 2">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="/img/Amenagements_Urbain/amenagement_zone_permeable_1.webp" width="768"
-                                        height="576" alt="amenagement zone permeable 1">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="/img/Amenagements_Urbain/amenagement_urbain_4.webp" width="1024"
-                                        height="768" alt="amenagement urbain 4">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="/img/Amenagements_Urbain/amenagement_parking_3.webp" width="1024"
-                                        height="768" alt="amenagement parking 3">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="/img/Amenagements_Urbain/amenagement_zone_permeable_3.webp" width="1024"
-                                        height="768" alt="amenagement zone permeable 3">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="/img/Amenagements_Urbain/amenagement_parking_1.webp" width="1024"
-                                        height="768" alt="amenagement parking 1">
+                <section class="prestation-right">
+                    <div class="prestation">
+                        <div>
+                            <h2>Exemples de réalisation</h2>
+                            <div class="grid text-center">
+                                <div class="g-col-6 g-col-md-4">
+                                    <div id="carouselFade" class="carousel slide carousel-fade">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="/img/Amenagements_Urbain/amenagement_urbain_1.webp"
+                                                    width="1024" height="768" alt="amenagement urbain 1">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="/img/Amenagements_Urbain/amenagement_parking_4.webp"
+                                                    width="1024" height="768" alt="amenagement parking 4">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="/img/Amenagements_Urbain/amenagement_zone_permeable_2.webp"
+                                                    width="1024" height="768" alt="amenagement zone permeable 2">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="/img/Amenagements_Urbain/amenagement_urbain_2.webp"
+                                                    width="1024" height="768" alt="amenagement urbain 2">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="/img/Amenagements_Urbain/amenagement_urbain_3.webp"
+                                                    width="1024" height="768" alt="amenagement urbain 3">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="/img/Amenagements_Urbain/amenagement_parking_2.webp"
+                                                    width="1024" height="768" alt="amenagement parking 2">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="/img/Amenagements_Urbain/amenagement_zone_permeable_1.webp"
+                                                    width="768" height="576" alt="amenagement zone permeable 1">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="/img/Amenagements_Urbain/amenagement_urbain_4.webp"
+                                                    width="1024" height="768" alt="amenagement urbain 4">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="/img/Amenagements_Urbain/amenagement_parking_3.webp"
+                                                    width="1024" height="768" alt="amenagement parking 3">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="/img/Amenagements_Urbain/amenagement_zone_permeable_3.webp"
+                                                    width="1024" height="768" alt="amenagement zone permeable 3">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="/img/Amenagements_Urbain/amenagement_parking_1.webp"
+                                                    width="1024" height="768" alt="amenagement parking 1">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselFade" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselFade" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselFade"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselFade"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
                         </div>
-                    </div>
+                </section>
             </section>
         </main>
 

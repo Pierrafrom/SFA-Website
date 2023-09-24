@@ -3,8 +3,9 @@
 
 <head>
     <%- include('partials/head'); %>
-        <!-- Fichier CSS pour les carousel -->
+        <!-- Fichier CSS pour les carousel et les sections de couleurs -->
         <link rel="stylesheet" href="/css/carousel.css" type="text/css">
+        <link rel="stylesheet" href="/css/prestation.css" type="text/css">
         <title>Gros Aménagement</title>
 </head>
 
@@ -16,42 +17,49 @@
             <div class="bandeau" style="background-image: url(/img/SFA-Banniere.webp);">
                 <h1>Gros Aménagement</h1>
             </div>
-            <section>
-                <div class="block-center">
-                    <h2>Du petit chantier aux grands travaux</h2>
-                    <ul class="text">
-                        <li>Lotissement</li>
-                        <li>Création de ZAC</li>
-                    </ul>
-                </div>
-            </section>
 
-            <section>
-                <h2>Images</h2>
-                <div class="grid text-center">
-                    <div class="g-col-6 g-col-md-4">
-                        <h4>Exemples de réalisations :</h4>
-                        <div id="carouselFade" class="carousel slide carousel-fade">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="/img/grosAmenagement/lotissement.webp" width="1024" height="768"
-                                        alt="SFA Lotissement">
+
+            <section class="prestation-container">
+                <section class="prestation-left color1">
+                    <div class="prestation">
+                        <h2>Du petit chantier aux grands travaux</h2>
+                        <ul class="text">
+                            <li>Lotissement</li>
+                            <li>Création de ZAC</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="prestation-right">
+                    <div class="prestation">
+                        <div>
+                            <h2>Exemples de réalisation</h2>
+                            <div class="grid text-center">
+                                <div class="g-col-6 g-col-md-4">
+                                    <div id="carouselFade" class="carousel slide carousel-fade">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="/img/grosAmenagement/lotissement.webp" width="1024"
+                                                    height="768" alt="SFA Lotissement">
+                                            </div>
+                                        </div>
+                                        <!--
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselFade" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselFade" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                        -->
+                                    </div>
                                 </div>
                             </div>
-                            <!--
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselFade"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselFade"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button> -->
                         </div>
-                    </div>
-                </div>
+                </section>
             </section>
         </main>
 

@@ -9,6 +9,9 @@
 </head>
 
 <body>
+    <!-- Fichier CSS pour les carousel et les sections de couleurs -->
+    <link rel="stylesheet" href="/css/carousel.css" type="text/css">
+    <link rel="stylesheet" href="/css/prestation.css" type="text/css">
     <%- include('partials/header'); %>
 
         <main>
@@ -17,25 +20,51 @@
                 <h1>Réseaux</h1>
             </div>
 
-            <section>
-                <div class="block-center">
-                    <h2>Les travaux publics, les terrassements et les réseaux:
-                    </h2>
-                    <ul class="text">
-                        <li>Création et mise aux normes de l’assainissement et de réseaux divers</li>
-                        <li>Création branchements en EU EP</li>
-                        <li>Extension de réseaux EU EP</li>
-                        <li>Pose de réseau FT et fibre</li>
-                        <li>AEP (partenariat)</li>
-                    </ul>
-                </div>
+            <section class="prestation-container">
+                <section class="prestation-left color1">
+                    <div class="prestation">
+                        <h2>Les travaux publics, les terrassements et les réseaux</h2>
+                        <ul class="text">
+                            <li>Création et mise aux normes de l’assainissement et de réseaux divers</li>
+                            <li>Création branchements en EU EP</li>
+                            <li>Extension de réseaux EU EP</li>
+                            <li>Pose de réseau FT et fibre</li>
+                            <li>AEP (partenariat)</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="prestation-right">
+                    <div class="prestation">
+                        <div>
+                            <h2>Exemples de réalisation</h2>
+                            <div class="grid text-center">
+                                <div class="g-col-6 g-col-md-4">
+                                    <div id="carouselFade" class="carousel slide carousel-fade">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="/img/reseaux/aep.webp" width="1024"
+                                                    height="768" alt="aep">
+                                            </div>
+                                        </div>
+                                        <!--
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselFade" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselFade" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                        -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </section>
             </section>
-
-
-            <section>
-                <h2>Images</h2>
-            </section>
-
         </main>
 
         <%- include('partials/footer'); %>

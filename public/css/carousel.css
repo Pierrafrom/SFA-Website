@@ -13,10 +13,13 @@
     display: flex;
     margin: auto;
     width: 100%;
-    max-width: 617px;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+}
+
+.little-width{
+  max-width: 617px;
 }
 
 /* Style pour le rond blanc derrière les flèches */

@@ -44,16 +44,19 @@ img {
 
 h1 {
     text-align: center;
-    text-decoration: underline;
     font-weight: 600;
     padding: 10px;
 }
 
 h2 {
     text-align: center;
-    text-decoration: underline;
     padding-bottom: 20px;
     font-weight: 600;
+}
+
+h4 {
+    font-weight: 600;
+    padding-top: 20px;
 }
 
 p {
@@ -102,6 +105,7 @@ section {
     align-items: center;
     justify-content: center;
     height: 100%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -136,25 +140,11 @@ footer iframe {
     border-color: #219653;
 }
 
-.color4 {
-    background-color: #e74c3c; /* Rouge pour l'urgence et l'attention */
-    color: #ffffff;
-    border-color: #c0392b;
-}
-
 .color5 {
     background-color: #3498db; /* Bleu associé à la confiance et à la fiabilité */
     color: #ffffff;
     border-color: #2980b9;
 }
-
-.color6 {
-    background-color: #8e44ad; /* Violet profond pour la créativité et la modernité */
-    color: #ffffff;
-    border-color: #7d3c98;
-}
-
-
 
 
 @media screen and (max-width: 768px) {

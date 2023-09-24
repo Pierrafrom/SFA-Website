@@ -3,6 +3,9 @@
 
 <head>
     <%- include('partials/head'); %>
+        <!-- Fichier CSS pour les carousel et les sections de couleurs -->
+        <link rel="stylesheet" href="/css/carousel.css" type="text/css">
+        <link rel="stylesheet" href="/css/prestation.css" type="text/css">
         <title>Création et aménagement de paysages extérieurs</title>
 </head>
 
@@ -11,14 +14,81 @@
 
         <main>
             <!-- Banner -->
-            <div class="bandeau" style="background-image: url(/img/SFA-Banniere.webp);">
+            <div class="bandeau" style="background-image: url(/img/ev-banniere.webp);">
                 <h1>Création et aménagement de paysages extérieurs</h1>
             </div>
 
-            <section>
-                <h2>Images</h2>
-            </section>
+            <section class="prestation-container">
+                <section class="prestation-left color3">
+                    <div class="prestation">
+                        <h2>Profiter de vos extérieurs par tous temps.</h2>
+                        <p>SFA EV incarne et transmet les valeurs et les savoir-faire de la
+                            profession en donnant aux jardins de leurs clients leur véritable but : être une pièce à
+                            vivre
+                            supplémentaire, une extension de la maison où l’on pourra à loisir faire une activité comme
+                            jouer, se détendre, faire du sport, …
+                        </p>
+                    </div>
+                </section>
 
+                <section class="prestation-right">
+                    <div class="prestation">
+                        <div>
+                            <h2>Exemples de réalisation</h2>
+                            <div class="grid text-center">
+                                <div class="g-col-6 g-col-md-4">
+                                    <div id="carouselFade" class="carousel slide carousel-fade">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="/img/paysage_ext/creation_amenagement_paysager_1.webp"
+                                                    width="1024" height="768" alt="creation amenagement paysager 1">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="/img/paysage_ext/creation_amenagement_pay_ext.webp"
+                                                    width="1024" height="768"
+                                                    alt="creation amenagement paysage exterieur">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="/img/paysage_ext/creation_amenagement_paysage_ext.webp"
+                                                    width="1024" height="768"
+                                                    alt="creation amenagement paysage exterieur 1">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="/img/paysage_ext/creation_amenagement_paysager.webp"
+                                                    width="1024" height="768" alt="creation amenagement paysager">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="/img/paysage_ext/creation_amenagement_paysages_exterieurs.webp"
+                                                    width="1024" height="768"
+                                                    alt="creation amenagement paysages exterieurs">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="/img/paysage_ext/creation_chemin_pietonnier_collectivite.webp"
+                                                    width="1024" height="768"
+                                                    alt="creation chemin pietonnier collectivite">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="/img/paysage_ext/creation_entretien_amenagement_paysager.webp"
+                                                    width="1024" height="768"
+                                                    alt="creation entretien amenagement paysager">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselFade" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselFade" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+            </section>
         </main>
 
         <%- include('partials/footer'); %>

@@ -3,6 +3,9 @@
 
 <head>
     <%- include('partials/head'); %>
+        <!-- Fichier CSS pour les carousel et les sections de couleurs -->
+        <link rel="stylesheet" href="/css/carousel.css" type="text/css">
+        <link rel="stylesheet" href="/css/prestation.css" type="text/css">
         <title>Entretien des espaces verts et voiries pour les collectivités</title>
 </head>
 
@@ -11,34 +14,76 @@
 
         <main>
             <!-- Banner -->
-            <div class="bandeau" style="background-image: url(/img/SFA-Banniere.webp);">
+            <div class="bandeau" style="background-image: url(/img/ev-banniere.webp);">
                 <h1>Entretien des espaces verts et voiries pour les collectivités</h1>
             </div>
 
-            <section>
-                <div class="block-center">
-                    <h2 class="text" style="margin-bottom: 20px;">SFA EV, partenaire privilégié des communes et
-                        collectivités comme service externe d’entretien des espaces verts et voiries
-                    </h2>
-                    <p style="margin-bottom: 20px;">SFA entretient vos places, parcs publics et jardin d’enfants, rues, trottoirs, parkings, massifs
-                        et environnement proche des bâtiments publics (mairies, collectivités territoriales, communautés
-                        d’agglomération…) </p>
+            <section class="prestation-container">
+                <section class="prestation-left color3">
+                    <div class="prestation">
+                        <h2>SFA EV, partenaire privilégié des communes et
+                            collectivités comme service externe d’entretien des espaces verts et voiries</h2>
+                        <p>SFA entretient vos places, parcs publics et jardin d’enfants, rues, trottoirs, parkings,
+                            massifs et environnement proche des bâtiments publics (mairies, collectivités territoriales,
+                            communautés d’agglomération…)
+                        </p>
+                        <h4 class="text-center">Nous mettons aussi a votre disposition:</h4>
+                        <ul class="text">
+                            <li>Balayeuse de rues & trottoirs, curage de fossés, créations & entretiens de massifs,
+                                élagage, débroussaillage des bordures,</li>
+                            <li>Soufflage ramassage des feuilles, évacuation en décharge</li>
+                            <li>Arrosage automatique </li>
+                            <li>Nettoyage et bêchage des massifs</li>
+                            <li>Ramassage des papiers dans les espaces verts</li>
+                            <li>Déneigeuse</li>
+                        </ul>
+                    </div>
+                </section>
 
-                    <h4 class="text-center">Nous mettons aussi a votre disposition:</h4>
-                    <ul class="text">
-                        <li>Balayeuse de rues & trottoirs, curage de fossés, créations & entretiens de massifs, élagage,
-                            débroussaillage des bordures,</li>
-                        <li>Soufflage ramassage des feuilles, évacuation en décharge</li>
-                        <li>Arrosage automatique </li>
-                        <li>Nettoyage et bêchage des massifs</li>
-                        <li>Ramassage des papiers dans les espaces verts</li>
-                        <li>Déneigeuse</li>
-                    </ul>
-                </div>
-            </section>
-
-            <section>
-                <h2>Images</h2>
+                <section class="prestation-right">
+                    <div class="prestation">
+                        <div>
+                            <h2>Exemples de réalisation</h2>
+                            <div class="grid text-center">
+                                <div class="g-col-6 g-col-md-4">
+                                    <div id="carouselFade" class="carousel slide carousel-fade">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="/img/entretien-voirie/entretien_refection_1.webp" width="1024"
+                                                    height="768" alt="entretien refection 1">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="/img/entretien-voirie/entretien_refection_2.webp" width="1024"
+                                                    height="768" alt="entretien refection 2">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="/img/entretien-voirie/entretien_refection_3.webp" width="1024"
+                                                    height="768" alt="entretien refection 3">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="/img/entretien-voirie/entretien_refection_4.webp" width="1024"
+                                                    height="768" alt="entretien refection 4">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="/img/entretien-voirie/entretien_refection_5.webp" width="1024"
+                                                    height="768" alt="entretien refection 5">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselFade" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselFade" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </section>
             </section>
         </main>
 
