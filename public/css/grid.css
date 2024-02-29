@@ -65,7 +65,13 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1086px) {
+    .image-grid .col-md-3 {
+        width: 33.33333333333333%;
+    }
+}
+
+@media (max-width: 939px) {
     .image-grid .col-md-3 {
         width: 50%;
     }
