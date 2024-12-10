@@ -1,59 +1,44 @@
-// Définir les coordonnées géographiques pour les 3 points
-const point1 = [48.4734, 2.3488];
-const point2 = [48.8634, 2.3588];
-const point3 = [49.0734, 2.3688];
+// Tableau de 15 coordonnées GPS pour des villages dans les Yvelines
+const points = [
+  [48.8666, 1.9837], // Mantes-la-Jolie
+  [48.8, 2.1333], // Saint-Germain-en-Laye
+  [48.8708, 2.0241], // Poissy
+  [48.7857, 2.1191], // Versailles
+  [48.7831, 1.9595], // Aubergenville
+  [48.7917, 1.9275], // Epône
+  [48.84, 1.9267], // Guerville
+  [48.8583, 2.1283], // Louveciennes
+  [48.8728, 1.8211], // Septeuil
+  [48.7853, 2.0411], // Mareil-Marly
+  [48.8347, 2.1067], // Chatou
+  [48.8333, 1.8139], // Montfort-l'Amaury
+  [48.8325, 1.7739], // Gambais
+  [48.8025, 2.0856], // Le Vésinet
+  [48.7961, 2.08], // Croissy-sur-Seine
+];
 
-const map = L.map("map").setView([48.8534, 2.3488], 9);
+// Initialiser la carte avec une vue sur les Yvelines
+const map = L.map("map").setView([48.8, 1.9833], 10);
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    attribution:
-        'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
-    maxZoom: 18,
+  attribution:
+    'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+  maxZoom: 18,
 }).addTo(map);
 
-// Ajouter un fond de carte à la carte
-L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    attribution:
-        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-}).addTo(map);
+// Fonction pour ajouter un marqueur pour chaque coordonnée du tableau
+points.forEach((point, index) => {
+  const marker = L.marker(point).addTo(map);
+  marker.bindPopup(`<b>Chantier ${index + 1}</b><br>Chantier réalisé par SFA.`);
 
-// Ajouter les 3 points à la carte avec des popups et des liens
-const marker1 = L.marker(point1).addTo(map);
-marker1.bindPopup(
-    "<b>Chantier 1</b><br>Informations sur le chantier 1.<br><a href='#'>Chantier 1</a>"
-);
-marker1.on("click", function () {
-    if (window.innerWidth > 991) {
-        window.location.href = "html/chantier/chantier1.html";
-    }
-});
-
-const marker2 = L.marker(point2).addTo(map);
-marker2.bindPopup(
-    "<b>Chantier 2</b><br>Informations sur le chantier 2.<br><a href='#'>Chantier 2</a>"
-);
-marker2.on("click", function () {
-    if (window.innerWidth > 991) {
-        window.location.href = "html/chantier/chantier1.html";
-    }
-});
-
-const marker3 = L.marker(point3).addTo(map);
-marker3.bindPopup(
-    "<b>Chantier 3</b><br>Informations sur le chantier 3.<br><a href='#'>Chantier 3</a>"
-);
-marker3.on("click", function () {
-    if (window.innerWidth > 991) {
-        window.location.href = "html/chantier/chantier3.html";
-    }
-});
-
-// Afficher le popup au survol de la souris
-marker1.on("mouseover", function () {
+  // Ouvrir le popup au survol
+  marker.on("mouseover", function () {
     this.openPopup();
-});
-marker2.on("mouseover", function () {
-    this.openPopup();
-});
-marker3.on("mouseover", function () {
-    this.openPopup();
+  });
+
+  // Rediriger lors du clic selon la taille de la fenêtre
+  marker.on("click", function () {
+    if (window.innerWidth > 991) {
+      window.location.href = `html/chantier/chantier${index + 1}.html`;
+    }
+  });
 });

@@ -1,95 +1,156 @@
 <header>
-    <!-- Bootstrap navbar -->
-    <nav class="navbar navbar-expand-lg  fixed-top">
-        <div class="container-fluid">
-            <!-- Logo -->
-            <a class="navbar-brand" href="/">
-                <img src="/img/logos/SFA-Groupe.png" width="638" height="391" alt="SFA-Groupe"
-                    style="height: 36px; width: auto;">
+  <!-- Bootstrap navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand" href="/">
+        <img
+          src="/img/logos/SFA-Groupe.png"
+          width="638"
+          height="391"
+          alt="SFA-Groupe"
+          style="height: 36px; width: auto"
+        />
+      </a>
+      <!-- Hamburger menu -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <!-- Home page link -->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Accueil</a>
+          </li>
+          <!-- Dropdown menu -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              data-bs-auto-close="outside"
+            >
+              Prestations
             </a>
-            <!-- Hamburger menu -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <!-- Home page link -->
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/">Accueil</a>
-                    </li>
-                    <!-- Dropdown menu -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-                            Prestations
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <!-- First dropdown submenu -->
-                            <li>
-                                <a class="dropdown-item dropdown-toggle" href="#" id="submenu-1">SFA Travaux publics</a>
-                                <ul class="dropdown-submenu hide" id="submenu-1-items">
-                                    <li><a class="dropdown-item " href="/grosAmenagement">Gros
-                                            Aménagements</a></li>
-                                    <li><a class="dropdown-item" href="/amenagementUrbain">Aménagements
-                                            Urbain</a></li>
-                                    <li><a class="dropdown-item" href="/maconnerie">Maçonnerie</a></li>
-                                    <li><a class="dropdown-item" href="/reseaux">Réseaux</a></li>
-                                </ul>
-                            </li>
-                            <!-- Second dropdown submenu -->
-                            <li>
-                                <a class="dropdown-item dropdown-toggle" href="#" id="submenu-2">SFA Espaces verts</a>
-                                <ul class="dropdown-submenu hide" id="submenu-2-items">
-                                    <li><a class="dropdown-item " href="/voirie">Entretien
-                                            des espaces verts et voiries pour
-                                            les collectivités</a></li>
-                                    <li><a class="dropdown-item" href="/creationPaysageExt">Création
-                                            et aménagement de paysages
-                                            extérieurs</a></li>
-                                    <li><a class="dropdown-item" href="entretienAmenagementPaysage">Entretien
-                                            des aménagements paysagers</a></li>
-                                    <li><a class="dropdown-item" href="/elagage">Élagage et
-                                            entretien des arbres</a></li>
-                                    <li><a class="dropdown-item" href="/arrosage">Arrosage</a></li>
-                                    <li><a class="dropdown-item" href="/cloturePortail">Pose de clôtures
-                                            et de portails</a></li>
-                                    <li><a class="dropdown-item" href="/genieVegetalEcologique">Génie végétal
-                                            et génie écologique</a></li>
-                                    <li><a class="dropdown-item" href="/vegetalisation">Végétalisation
-                                            des terrasses et des
-                                            toitures</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="/prestation">Toutes les prestations</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <!-- Dropdown menu -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            A propos de
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item" href="/about-SFA-EV">A propos de SFA Espaces Verts</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="/about-SFA-TP">A propos de SFA Travaux
-                                    Publics</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <!-- Contact page link -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="/contact">Contact</a>
-                    </li>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <!-- First dropdown submenu -->
+              <li>
+                <a class="dropdown-item dropdown-toggle" href="#" id="submenu-1"
+                  >SFA Travaux publics</a
+                >
+                <ul class="dropdown-submenu hide" id="submenu-1-items">
+                  <li>
+                    <a class="dropdown-item" href="/grosAmenagement"
+                      >Gros Aménagements</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/amenagementUrbain"
+                      >Aménagements Urbain</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/maconnerie">Maçonnerie</a>
+                  </li>
+                  <li><a class="dropdown-item" href="/reseaux">Réseaux</a></li>
                 </ul>
-            </div>
-        </div>
-    </nav>
+              </li>
+              <!-- Second dropdown submenu -->
+              <li>
+                <a class="dropdown-item dropdown-toggle" href="#" id="submenu-2"
+                  >SFA Espaces verts</a
+                >
+                <ul class="dropdown-submenu hide" id="submenu-2-items">
+                  <li>
+                    <a class="dropdown-item" href="/voirie"
+                      >Entretien des espaces verts et voiries pour les
+                      collectivités</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/creationPaysageExt"
+                      >Création et aménagement de paysages extérieurs</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="entretienAmenagementPaysage"
+                      >Entretien des aménagements paysagers</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/elagage"
+                      >Élagage et entretien des arbres</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/cloturePortail"
+                      >Pose de clôtures et de portails</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/genieVegetalEcologique"
+                      >Génie végétal et génie écologique</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/vegetalisation"
+                      >Végétalisation des terrasses et des toitures</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/arrosage">Arrosage</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-item" href="/prestation"
+                  >Toutes les prestations</a
+                >
+              </li>
+            </ul>
+          </li>
+          <!-- Dropdown menu -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              A propos de
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="/about-SFA-EV"
+                  >A propos de SFA Espaces Verts</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="/about-SFA-TP"
+                  >A propos de SFA Travaux Publics</a
+                >
+              </li>
+            </ul>
+          </li>
+          <!-- Contact page link -->
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </header>
